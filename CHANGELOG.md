@@ -3,11 +3,10 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
-## [1.0.0]
+## [1.0.0] - 2026-11-18
 
 The first public version of Nervenet, for **Windows 10 and 11** (x64, and Windows on ARM through emulation), **macOS 14
-or later** (Apple silicon and Intel) and **Linux** (x64 and arm64). The release date will be set when the installers
-are published.
+or later** (Apple silicon and Intel) and **Linux** (x64 and arm64).
 
 ### Release
 
