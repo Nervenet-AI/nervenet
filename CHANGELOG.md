@@ -3,10 +3,19 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
-## [0.1.0] - Preview
+## [1.0.0]
 
-The first public version of Nervenet, for **Windows 10 and 11 (x64)**. The release date will be set when the
-installer is published.
+The first public version of Nervenet, for **Windows 10 and 11** (x64, and Windows on ARM through emulation), **macOS 14
+or later** (Apple silicon and Intel) and **Linux** (x64 and arm64). The release date will be set when the installers
+are published.
+
+### Release
+
+- Downloads for Windows, macOS (Apple silicon and Intel) and Linux, all on this repository's releases page.
+- **Report a problem** in the profile menu and in Settings › About opens a new issue here, with your version filled in.
+- Updates come from nervenet.app. Each daily check also counts the install anonymously: a random number, the version
+  and the system, never your files or chats. Turning off automatic update checks turns the count off too.
+- The Mac app isn't notarised by Apple: open it once through System Settings › Privacy & Security › Open Anyway.
 
 Nervenet is a desktop AI agent that works in a folder on your computer, with the model you choose. It reads and edits
 files, runs commands, searches the web and uses a browser. It asks you before risky steps. You can reach it from your
@@ -180,8 +189,8 @@ The first working build.
 
 ### Known limitations
 
-- **Platforms:** verified on Windows 11 x64. Linux and macOS builds exist but haven't been run yet. There is no native
-  Windows on ARM build; the x64 version runs there through emulation.
+- **Platforms:** most of the testing was on Windows 11 x64. The macOS and Linux versions are new and have had much less
+  testing. There is no native Windows on ARM build; the x64 version runs there through emulation.
 - **Providers:** only a few were tested against the real services. The other presets follow their providers'
   documentation. Continue with ChatGPT hasn't been tried against the real service yet.
 - **Not yet tried with real accounts:**
@@ -197,4 +206,4 @@ The first working build.
 - **The app lock** locks the app. It doesn't encrypt your files.
 - **Context sizes** are estimates for providers that don't report usage.
 
-[0.1.0]: https://github.com/Nervenet-AI/nervenet
+[1.0.0]: https://github.com/Nervenet-AI/nervenet/releases/tag/v1.0.0

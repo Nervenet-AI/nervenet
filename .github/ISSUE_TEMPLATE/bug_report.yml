@@ -1,0 +1,57 @@
+name: Report a problem
+description: Something in Nervenet doesn't work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to tell us. Please don't paste API keys, passwords or private files here: this page is public.
+  - type: input
+    id: version
+    attributes:
+      label: Nervenet version
+      description: Settings › About shows it. "Report a problem" in the app fills it in.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Edition
+      description: The download you installed. "Report a problem" in the app fills it in.
+      placeholder: "x64, osx-arm64, osx-x64, linux-x64 or linux-arm64"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 24H2, macOS 15.1, Ubuntu 24.04 …"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. Open …
+        2. Ask …
+        3. See …
+  - type: input
+    id: model
+    attributes:
+      label: Model provider
+      description: If it's about a chat, which provider and model you used (no keys).
+      placeholder: "OpenAI gpt-…, Anthropic …, Ollama …"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lines
+      description: |
+        Optional. The log is in Nervenet's data folder, under logs (Windows: %LOCALAPPDATA%\Nervenet\logs). Copy only the lines around the problem and check them for anything private first.
+      render: text

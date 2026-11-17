@@ -1,0 +1,15 @@
+name: Suggest an idea
+description: Something Nervenet could do, or do better.
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Nervenet to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help you with?
+      description: The task or the situation where you missed it.

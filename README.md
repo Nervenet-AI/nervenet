@@ -9,11 +9,11 @@
 A desktop AI agent for code, research and everyday work. Use your own model, connect WhatsApp or Telegram,<br/>and keep tasks moving while your computer stays on.
 
 [![Website](https://img.shields.io/badge/nervenet.app-visit-C6613F?style=flat-square&labelColor=0a1230)](https://www.nervenet.app)
-[![Platform](https://img.shields.io/badge/platform-Windows%20preview-C6613F?style=flat-square&labelColor=0a1230)](https://github.com/MuhammadNoman76/Nervenet-app/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-C6613F?style=flat-square&labelColor=0a1230)](https://github.com/Nervenet-AI/nervenet/releases/latest)
 [![Models](https://img.shields.io/badge/models-OpenAI%20%7C%20Anthropic%20%7C%20Ollama%20%7C%20LM%20Studio-C6613F?style=flat-square&labelColor=0a1230)](https://www.nervenet.app/#capabilities)
 [![Instagram](https://img.shields.io/badge/@nervenet__ai-instagram-C6613F?style=flat-square&logo=instagram&logoColor=white&labelColor=0a1230)](https://www.instagram.com/nervenet_ai/)
 
-[Website](https://www.nervenet.app) · [Download](https://github.com/MuhammadNoman76/Nervenet-app/releases) · [Subagents](https://www.nervenet.app/subagents/) · [Channels](https://www.nervenet.app/channels/)
+[Website](https://www.nervenet.app) · [Download](https://github.com/Nervenet-AI/nervenet/releases/latest) · [Report a problem](https://github.com/Nervenet-AI/nervenet/issues/new/choose) · [Subagents](https://www.nervenet.app/subagents/) · [Channels](https://www.nervenet.app/channels/)
 
 </div>
 
@@ -48,9 +48,32 @@ You ──▶ Nervenet (desktop app) ──▶ your model of choice
               └── asks you before risky steps (desktop, WhatsApp or Telegram)
 ```
 
+## Download
+
+Every download is on the [latest release](https://github.com/Nervenet-AI/nervenet/releases/latest). Nervenet is free.
+
+| System | Download | Install |
+|---|---|---|
+| **Windows 10 and 11** (64-bit; also Windows on ARM) | `Nervenet-Setup-<version>-x64.exe` | Run it. If SmartScreen says "Windows protected your PC", choose **More info › Run anyway**. |
+| **macOS 14 or later, Apple silicon** (M1 and newer) | `Nervenet-<version>-macos-arm64.dmg` | Open it and drag Nervenet to Applications. See *First start on a Mac* below. |
+| **macOS 14 or later, Intel** | `Nervenet-<version>-macos-x64.dmg` | The same. |
+| **Linux** (x64 or arm64, glibc 2.28 or newer) | `nervenet-<version>-linux-<arch>.tar.gz` | Unpack it and run `./install.sh` (no root needed). |
+
+**First start on a Mac.** Nervenet isn't notarised by Apple yet, so macOS refuses to open it the first time. Then:
+
+1. Open **System Settings › Privacy & Security**.
+2. Scroll down to the message about Nervenet and click **Open Anyway**.
+3. Confirm with **Open** (and your password if asked).
+
+You only do this once. Each download's SHA-256 checksum is listed with the release.
+
+Nervenet checks for a newer version about once a day. Each check is also an anonymous count of active installs: a
+random number made on your computer, the version and the system, never your name, files or chats. You can turn it off
+in Settings › About.
+
 ## Get started
 
-1. **Download** the latest Windows preview from [Releases](https://github.com/MuhammadNoman76/Nervenet-app/releases).
+1. **Download** and install Nervenet (above).
 2. **Connect a model**: add an OpenAI, Anthropic or OpenAI-compatible key, or point it at a local Ollama / LM Studio server.
 3. **Pick a folder** for Nervenet to work in.
 4. **Give it a job.** Optionally connect WhatsApp or Telegram to stay in the loop from your phone.
@@ -58,7 +81,9 @@ You ──▶ Nervenet (desktop app) ──▶ your model of choice
 ## Links
 
 - Website: [nervenet.app](https://www.nervenet.app)
-- App repository & releases: [MuhammadNoman76/Nervenet-app](https://github.com/MuhammadNoman76/Nervenet-app)
+- Downloads: [latest release](https://github.com/Nervenet-AI/nervenet/releases/latest)
+- Report a problem or suggest an idea: [issues](https://github.com/Nervenet-AI/nervenet/issues/new/choose) (or **Report a problem** in the app's menu)
+- Changes in each version: [CHANGELOG.md](CHANGELOG.md)
 - Instagram: [@nervenet_ai](https://www.instagram.com/nervenet_ai/)
 - Contact: [contact@nervenet.app](mailto:contact@nervenet.app)
 
