@@ -6,8 +6,8 @@ and its source is private. Everything here is read by users, so write for them.
 ## What lives here
 - `README.md`: what Nervenet is, the download table per system, first start on a Mac (Open Anyway), the anonymous
   install count, and links.
-- `CHANGELOG.md`: one section per version, newest first, in plain words for users. Each release's GitHub text is that
-  version's section.
+- `CHANGELOG.md`: one section per version, newest first, in plain words for users. Each release's GitHub text is a
+  short summary of that section (downloads, first start on each system, highlights) with a link to it.
 - `.github/ISSUE_TEMPLATE/`: the issue forms.
   - `bug_report.yml` is what the app's "Report a problem" opens: `issues/new?template=bug_report.yml&version=…&system=…`.
     Its field ids `version` and `system` must stay as they are, or change together with the app's
