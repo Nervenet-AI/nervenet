@@ -24,6 +24,12 @@ Connecting your apps got easier: more choice, less clicking.
 - **A clearer message when a chat has too many tools.** Some models accept only a limited number of tools at once.
   If a model refuses for that reason, the message now says what to do: turn off the connectors this chat doesn't
   need (the + menu in the message box), or choose fewer Composio actions.
+- **Updates you can see.** When a new version is out, a dot appears on your picture at the bottom of the sidebar
+  ("Update available") and on Settings › About. About shows what's new, with **Update now** and **Skip this
+  version**; the download shows its progress and can be cancelled. On Windows the installer now shows its progress
+  while it works (before, nothing was on screen for a minute or two), Nervenet asks first if something is still
+  running, and it tells you when it has been updated. Updating from 1.0.0 still works the old way: you'll see this
+  from the next update on.
 
 Not tested yet: these changes were tested with a stand-in for Composio, not with a real Composio account. If Composio
 doesn't mark any key actions for an app, the Recommended choice doesn't appear.
