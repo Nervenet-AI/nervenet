@@ -3,6 +3,31 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
+## [1.0.1] - 2026-11-18
+
+Connecting your apps got easier: more choice, less clicking.
+
+- **Two ways to connect an app.** Many apps, such as Gmail, Google Drive, Slack, GitHub and Notion, can be connected
+  directly or through Composio. When the agent suggests one, the card now offers both, side by side, with how each one
+  signs you in (for example "Your own OAuth app" or a one-click sign-in through Composio). Pick whichever is easier;
+  either one will do.
+- **The agent can pick the actions it needs.** For an app connected through Composio, the agent can look through the
+  app's actions and choose the ones the task needs, instead of you ticking them one by one. With your Composio key
+  saved, they're added for you and you only connect your account. Without a key, they come ticked when you add it.
+  Every action still asks before it runs, as your Composio setting says.
+- **No limit on Composio actions.** Choose as many actions as you like (the limit was 32).
+- **Recommended actions.** An app's page in Connectors › Composio starts with **Recommended**: the app's key
+  actions, as Composio marks them. Opened from a chat, it starts with the actions the agent picked for the task
+  instead.
+- **Your Composio apps on the Installed tab.** Apps you chose Composio actions for now show on the Connectors page's
+  Installed tab, next to your other connectors, with whether your account is connected.
+- **A clearer message when a chat has too many tools.** Some models accept only a limited number of tools at once.
+  If a model refuses for that reason, the message now says what to do: turn off the connectors this chat doesn't
+  need (the + menu in the message box), or choose fewer Composio actions.
+
+Not tested yet: these changes were tested with a stand-in for Composio, not with a real Composio account. If Composio
+doesn't mark any key actions for an app, the Recommended choice doesn't appear.
+
 ## [1.0.0] - 2026-11-18
 
 The first public version of Nervenet, for **Windows 10 and 11** (x64, and Windows on ARM through emulation), **macOS 14
