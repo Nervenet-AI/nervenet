@@ -3,6 +3,24 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
+## [1.0.3] - 2026-11-19
+
+A much smaller download, and remote access that works from your other devices.
+
+- **Smaller and lighter.** Voice (talking instead of typing) and Token Saver are now downloaded only when you turn them
+  on, so everyone else gets a much smaller installer, a quicker install and quicker updates, and neither takes disk
+  space or memory unless you use it. Turning one on downloads it once, shows its progress, and it works straight away,
+  without restarting Nervenet. If you already use them, Nervenet fetches the new versions by itself after updating.
+- **Remote access from another device works.** Opening Nervenet in a browser on another computer or phone on your
+  network showed a blank page after signing in; it now opens normally. Copy buttons work there too.
+- **New versions are easy to see.** When a new version is out, a notice in the sidebar says so, with **Update** and
+  **Skip** right there. Nervenet now looks for new versions each time it starts and every few hours, instead of once a
+  day, so you hear about one sooner. (This shows from 1.0.3 on: install 1.0.3 once, and you'll see the next one.)
+- **Voice gives memory back sooner.** When voice hasn't been used for a few minutes, the memory it took is released
+  right away.
+
+Not tested yet: downloading voice and Token Saver from this release on macOS and Linux.
+
 ## [1.0.2] - 2026-11-19
 
 Nervenet starts every time, and a new Token Saver.
