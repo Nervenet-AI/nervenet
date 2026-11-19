@@ -3,6 +3,26 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
+## [1.0.2] - 2026-11-19
+
+Nervenet starts every time, and a new Token Saver.
+
+- **Nervenet always finishes starting.** Some people saw "Nervenet couldn't start" when a start took more than a
+  minute, which happens most after installing, updating or restarting the computer. Nervenet now waits as long as its
+  start is making progress. It also starts faster: it no longer reads thousands of its own files every time to check
+  them, and the installer prepares it once. If a start fails, it tries again by itself. If it still can't start, you
+  see **Try again** instead of a technical message. A slow start also tells you that the first start after an update
+  or a restart can take a minute.
+- **Nervenet Token Saver** (Settings › Token Saver, off by default). Turn it on and long results from your tools reach
+  the model in a more compact form, so the same work uses fewer tokens. Lists of records, like the ones your connected
+  apps and commands return, become a compact table; in our tests those results took a third to a half fewer tokens.
+  Nothing is left out: a result that can't be made smaller without losing something is sent as it is, and files,
+  searches and web pages always go word for word. It all happens on your computer, and your chat keeps the original
+  results.
+
+Not tested yet: Token Saver was tested with sample results, not with a real model reading the tables or with real
+connected apps. The faster start was measured on one Windows PC.
+
 ## [1.0.1] - 2026-11-18
 
 Connecting your apps got easier: more choice, less clicking.
