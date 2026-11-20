@@ -3,6 +3,25 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
+## [1.0.4] - 2026-11-20
+
+A fix for Nervenet stopping in the middle of work. Everyone on 1.0.3 should update.
+
+- **Fixed: "database is locked", after which nothing worked until a restart.** While Nervenet was working it could
+  suddenly show "database is locked" (for example "Couldn't start a session"). From that moment new chats, messages
+  and the work in progress failed until Nervenet was restarted. It showed up during long runs with many steps (it was
+  seen in Auto mode with more than one agent working). The cause is removed, not worked around: everything Nervenet
+  saves now goes through one orderly line, a save is always either finished or not started, and stopping a run can no
+  longer leave one half done.
+- **Other programs can't stop Nervenet from saving.** If a backup or sync tool is busy with Nervenet's data at the
+  same moment, Nervenet waits for it and carries on. If it ever has to give up on one save, it says so in plain words
+  and the next one works.
+
+Your chats, settings and keys are not changed by this update.
+
+Not tested yet: this version on macOS and Linux computers (the fix is the same code on every system), and a real
+backup or sync tool holding Nervenet's data.
+
 ## [1.0.3] - 2026-11-19
 
 A much smaller download, and remote access that works from your other devices.
