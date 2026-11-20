@@ -3,6 +3,30 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
+## [1.0.5] - 2026-11-20
+
+You can see what the agent is doing in the browser, and stop it right there.
+
+- **Watch the agent work in the browser.** While the agent works in the page beside the chat, the page glows softly
+  at its edges, the agent's own pointer moves to where it clicks or types and says what it is doing ("Clicking",
+  "Typing", "Reading page text"), and a "Nervenet is working here" bar at the top has a **Stop** button that stops the
+  agent at once. When the agent hands a step to you (a sign-in code, for example), the page is all yours.
+- **One line in the chat for browser work.** Instead of a card for every step, the chat shows one row: "Using the
+  browser", how long it has taken, the latest step and a small picture of the page. Click it to see the browser, or
+  open it to see every step.
+- **A more capable browser for the agent.** It points at things on a page more precisely (by what is on the page, or
+  by the exact spot in a screenshot), fills in every kind of form field (text, dropdowns, checkboxes, dates), can read
+  a page's console messages and network requests when you ask it to look into a website, can show a page at a phone's
+  size, can zoom in to read small print, can upload a screenshot it took, and can record what it does as an animated
+  GIF saved in the chat's folder.
+- **It still asks first.** In Manual mode the agent asks before it acts on a website for the first time in a chat,
+  and every time before it sends a file or a screenshot to a website.
+
+Your chats, settings and keys are not changed by this update.
+
+Not tested yet: a real model choosing among the new browser abilities on everyday websites (they were tested with
+scripted steps on test pages), and the browser on macOS and Linux computers.
+
 ## [1.0.4] - 2026-11-20
 
 A fix for Nervenet stopping in the middle of work. Everyone on 1.0.3 should update.
