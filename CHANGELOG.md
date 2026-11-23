@@ -3,6 +3,30 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
+## [1.0.6] - 2026-11-24
+
+The agent does what you ask, the way you ask, and works with the files you give it.
+
+- **The agent follows your decisions.** When you ask for something, it does it your way: "post 50 comments" means
+  50, not a handful. If it sees a real risk you may not know about, it says so once, in a sentence, and then does it.
+  It no longer argues, repeats a warning you already heard, or adds limits of its own (doing only some of the items,
+  a slower pace, waiting between steps). Asking for a set of steps is your go-ahead for all of them. If it truly can't
+  do part of a task, it says so once and does the rest.
+- **Goals keep your conditions.** A goal holds what you asked for and the limits you set, not stricter ones of the
+  agent's own, and while there is work left that it can do now, the agent keeps going instead of spacing it out.
+- **Files you attach stay with the chat.** Every file or picture you attach to a message (picked, dropped, pasted, or
+  sent from another device with remote access) is now copied into the chat's own folder. The agent can open, change
+  and work on the file itself, not only read its text, even when the chat can't reach the folder where you keep the
+  original. It changes your original only when you ask for that. Clicking an attached file opens the chat's copy, and
+  a branch of the chat keeps the file after you move or delete the original. Files over 500 MB aren't copied. The
+  copies take disk space until you delete the chat, and are deleted with it.
+
+Your chats, settings and keys are not changed by this update. Files attached before it stay where they were.
+
+Not tested yet: how closely each model follows the new instructions (they were tested with scripted steps, not with
+real models), attaching files by hand in the app's window (the automated checks cover it), and macOS and Linux
+computers.
+
 ## [1.0.5] - 2026-11-20
 
 You can see what the agent is doing in the browser, and stop it right there.
