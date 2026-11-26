@@ -3,6 +3,32 @@
 All notable changes to Nervenet are listed here, newest first. Version numbers follow
 [Semantic Versioning](https://semver.org/). Dates are written as YYYY-MM-DD.
 
+## [1.0.7] - 2026-11-27
+
+The agent waits less between its steps, and the browser no longer stalls when Nervenet's window is out of sight.
+
+- **Less waiting between steps.** After every step, Nervenet spent a fifth of a second or more getting ready before
+  the next tool could start, and more at the start of every message. That is now a few hundredths of a second. In a
+  test with a stand-in model that answers at once, eight quick steps (reading, searching, writing and editing files,
+  one command) took 2.2 seconds instead of 4.2. With a real model, most of the wait is the model itself.
+- **The browser doesn't stall when Nervenet is minimized or covered.** While Nervenet's window was minimized or behind
+  other windows, every browser step could wait 15 seconds for the small picture of the page shown in the chat, and a
+  screenshot up to 30. The picture now waits at most a second and a half (and is skipped while the window can't be
+  seen), and a screenshot is taken another way after 4 seconds.
+- **Downloads in the browser** are reported with the step that started them, also when they take a moment to finish.
+- **Two commands started together in Restricted mode** (a background command and another one, for example) no longer
+  fail with "The command was not run".
+
+How long the model takes depends mostly on how much it reads each time: the whole conversation so far, plus a
+description of every tool and connector action that is turned on. For quicker replies, start a new chat for a new
+task, turn off connector actions you don't use, use a smaller context window (Settings › Providers) so long chats are
+summarized sooner, and use a lower reasoning effort for routine work.
+
+Your chats, settings and keys are not changed by this update.
+
+Not tested yet: the browser while Nervenet's window is minimized or covered (the automated checks can't show a window
+on screen), and macOS and Linux computers.
+
 ## [1.0.6] - 2026-11-24
 
 The agent does what you ask, the way you ask, and works with the files you give it.
